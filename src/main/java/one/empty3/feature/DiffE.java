@@ -237,7 +237,7 @@ p2.colorsRegion(i1, j1, j1-i1,j1-i1, Color. Red) ;
    }
    }
 }}}}
-          }
+          
 
 
 public void writeEnd(){
@@ -299,12 +299,12 @@ ImageIO.write(m2.getImage(), "JPEG", out);
            
            //ImageIO.write(m2g, "JPEG", new File(out.getParent()+5+"jpg"));
            return true;
-      } catch(Exception ex) {
+      } catch(Exception|FileNotFoundException|IOException ex) {
            ex.printStackTrace();
       }
     
   
    }
-
+}
    
             
