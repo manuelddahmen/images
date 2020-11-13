@@ -236,8 +236,9 @@ p2.colorsRegion(i1, j1, j1-i1,j1-i1, Color. Red) ;
 }
    }
    }
-}}}}}}
-*/
+}}}}
+          }
+
 
 public void writeEnd(){
 
