@@ -196,21 +196,11 @@ List<Vec> candidates = new ArrayList<>() ;
       c[g][h] [0] =new Circle(g*p1.columns/elementSize, 1.*h*p1.lines/elementSize, elementSize);  
       c[g][h] [1] =new Circle(g*p2.columns/elementSize, 1.*h*p2.lines/elementSize, elementSize);  
 
-                               
-    
-           
-
-    
-
-        
-        
-        
-               // sort by importance or surgace
-    p1=m1;p2=m2;
+                      try {
     
          
- ImageIO.write(m2.getImage(), "jpeg", out);
-        
+ ImageIO.write(m1.getImage(), "jpeg", in);
+       } catch(Exception|FileNotFoundException|IOException){}
                // mapping
                
        int sort=0;int i=0;int j=0;
