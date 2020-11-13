@@ -283,12 +283,12 @@ p1. set(i,j,di1);
     File file = in;
      
         
-       try{
+       
 ImageIO.write(m2.getImage(), "JPEG", out);
            ImageIO.write(m2.getImage(), "JPEG", new File(out.getParent()+2+"jpg"));
            
            //ImageIO.write(m2g, "JPEG", new File(out.getParent()+5+"jpg"));
-           return true;
+           
       } catch(Exception|FileNotFoundException|IOException ex) {
            ex.printStackTrace();
       }
